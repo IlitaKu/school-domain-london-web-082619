@@ -23,8 +23,11 @@ class School
     return grades.flatten
   end
   def sort
-    @roster.sorted
-    
+    sorted_values = {}
+    @roster.each do |grade, student|
+      sorted_values[grade] = students.sort
+    end
+    return sorted_values
   end
 end
 
