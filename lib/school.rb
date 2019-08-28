@@ -23,6 +23,7 @@ class School
     return grades
   end
 end
+end
 
 Roxbourne = School()
 
