@@ -20,7 +20,7 @@ class School
         grades << value
       end
     end
-    return grades
+    return grades.flatten
   end
 end
 
