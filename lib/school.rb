@@ -23,7 +23,7 @@ class School
     return grades.flatten
   end
   def sort
-    @roster.values.sort
+    @roster.sort
   end
 end
 
