@@ -5,7 +5,9 @@ class School
     @roster = {9=>["Steve", "John"], 8=>["Lilly"]}
   end
   def add_student(student_name, grade)
-    @roster[grade] = []
+    if @roster.include?(grade)
+      
+      @roster[grade] = []
     @roster[grade] << student_name
   
   end
