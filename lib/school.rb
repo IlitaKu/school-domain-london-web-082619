@@ -12,4 +12,18 @@ class School
     @roster[grade] << student_name
    end
   end
+  
+  def grade(grade)
+    grades = []
+    @roster.each do |key,value| 
+      if key == grade
+        grades << value
+      end
+    end
+    return grades
+  end
 end
+
+Roxbourne = School()
+
+Roxbourne.grade(7)
